@@ -2,7 +2,7 @@ name: first
 
 on: push
 
-job:
+jobs:
     job1:
         name: first job
         runs-on: ubuntu-latest
@@ -19,4 +19,4 @@ job:
             - name: Step one
               uses: actions/checkout@v4
             - name: Step two
-              runs: "Get-ChildItem Env: | Sort-Object Name"
+              run: "Get-ChildItem Env: | Sort-Object Name"
